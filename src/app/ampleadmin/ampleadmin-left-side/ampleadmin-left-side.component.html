@@ -1,0 +1,50 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav slimscrollsidebar">
+        <div class="sidebar-head">
+            <h3>
+                <span class="fa-fw open-close">
+                    <i class="ti-close ti-menu"></i>
+                </span> 
+                <span class="hide-menu">Navigation
+                </span>
+            </h3>
+        </div>
+        <div class="user-profile">
+            <div class="dropdown user-pro-body">
+                <div>
+                    <img src="../assets/plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
+                </div>
+                <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Steave Gection 
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu animated flipInY">
+                    <li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
+                    <li><a href="#"><i class="fa fa-bar-chart"></i> My Balance</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i> Inbox</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="fa fa-config"></i> Account Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav" id="side-menu">
+            <li>
+                <a [routerLink]="['/dashboard']" [routerLinkActive]="['active']" class="waves-effect"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a>
+            </li>
+            <li> 
+                <a [routerLink]="['/clientes']" [routerLinkActive]="['active']" class="waves-effect"><i class="fa fa-users fa-fw"></i> <span class="hide-menu">Clientes<span class="label label-rouded label-danger pull-right">10</span></span></a>
+            </li>
+            <li> 
+                <a href="#" class="waves-effect"><i class="mdi mdi-chart-bar fa-fw"></i> <span class="hide-menu">Propuestas</span></a>
+            </li>
+            <li class="devider"></li>
+            <li> 
+                <a href="#" class="waves-effect"><i  class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Catálogos</span></a>
+            </li>
+            <li> 
+                <a href="#" class="waves-effect"><i class="mdi mdi-emoticon fa-fw"></i> <span class="hide-menu">Reportes</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
